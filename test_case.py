@@ -23,6 +23,10 @@ def test_navigate_back_to_main_menu():
     assert ApiDemosBLHideShowBtns.navigateBack() == True
 
 
-@pytest.mark.last
+@pytest.mark.fifth
 def test_verify_working_of_show_title():
     assert APiDemosBLTitleVerification.verifyShowHideTitle() == True
+
+@pytest.mark.last
+def test_close():
+    APiDemosBLTitleVerification.exit()

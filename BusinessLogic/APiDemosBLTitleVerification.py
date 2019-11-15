@@ -37,4 +37,6 @@ def verifyShowHideTitle():
         print("Exception Found " +str(e))
         return False
 
+def exit():
+    Drivers.driver.close_app()
 
